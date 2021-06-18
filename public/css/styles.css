@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+.global-nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr .5fr .5fr;
+    text-align: left;
+}
+
+.logo img{
+
+    width: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav ul, .login ul{
+    padding-left: 0px;
+    
+}
+.nav li, .login li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.avatar-pic img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.hero {
+    min-width: 1920px;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.main-grid {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.content-block {
+    text-align: left;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+.content-block img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content-block h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.content-block p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.user-info{
+
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+.user-info img{
+    width: 50px;
+    padding-left: 10px;
+    object-fit: fill;
+}
+
+.sign-up-card {
+width: 600px;
+display: grid;
+grid-template-columns: 1fr;
+margin: auto;
+text-align: center;
+color:cadetblue;
+border: 2px solid lightgray;
+border-radius: 25px;
+padding-bottom: 100px;
+}
+.sign-up-info {
+   
+    height: 200px;
+    
+}
+.sign-up-info h1{
+   
+   font-weight: bold;
+    
+}
+
+.sign-up-forms {
+
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+input {
+    padding-top: 15px;
+    background-color: #f5f9f9;
+    color: black;
+    border: none;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+::placeholder {
+    color: #b0b3b2;
+    padding-left: 5px;
+}
+
+.sign-up-button {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.sign-up-button:hover {
+
+    opacity: 75%;
+}
