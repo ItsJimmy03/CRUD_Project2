@@ -8,7 +8,7 @@ end
 
 post '/users' do
 
-    username = params[:username]
+    username = params[:user_name]
     email = params[:email]
     password = params[:password]
 
