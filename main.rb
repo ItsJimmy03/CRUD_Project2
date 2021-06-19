@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'pg'
 
-enable :sessoins
+enable :sessions
 
 require_relative 'db/db'
 require_relative 'models/posts'
