@@ -10,7 +10,7 @@ end
 
 def find_user_by_email(email)
 
-    sql_query = "SELECT * FROM users WHERE email = #{email}"
+    sql_query = "SELECT * FROM users WHERE email = '#{email}'"
     results = run_sql(sql_query)
 
     # Should return either a single User hash, or nil if not found
