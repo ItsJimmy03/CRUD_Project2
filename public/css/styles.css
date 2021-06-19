@@ -36,7 +36,7 @@ a:link {
 
 .login li{
 
-    display: inline-block;
+    display: inline;
 }
 .avatar-pic img{
     width: 50px;
