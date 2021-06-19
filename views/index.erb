@@ -3,14 +3,14 @@
 </div>
 
 <section class="main-grid">
-    <% projects.each do %>
+    <% projects.each do |post| %>
         <div class="content-block">
             <div class="image-block"><img
-                    src=<%= projects[:thumbnail_img]%>>
+                    src=<%= post["thumbnail_img"]%>>
             </div>
             <div class="info-block">
                 <div class="user-info">
-                <h2> <%= projects[:author] %>
+                <h2> <%= posts["author"] %>
                 </h2>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
