@@ -3,20 +3,24 @@
 </div>
 
 <section class="main-grid">
-    <% projects.each do |post|%>
+    <% projects.each do %>
         <div class="content-block">
             <div class="image-block"><img
-                    src=<%= post[:thumbnail_img]%>>
+                    src=<%= project[:thumbnail_img]%>>
             </div>
             <div class="info-block">
                 <div class="user-info">
-                <h2> <%= post[:author] %>
+                <h2> <%= project[:author] %>
                 </h2>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <div class="reactions">
                     <p>Likes: </p>
                 </div>
+                <form action="/planets/edit" method="POST">
+                    <input type="hidden" name="_method" value="PUTS"/>
+                    <input type="submit" value="Edit">
+                </form>
             </div>
         </div>
         <% end %>
