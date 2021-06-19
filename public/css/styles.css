@@ -11,8 +11,9 @@ a:link {
   }
 
 .global-nav {
+    align-items: baseline;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr .5fr .5fr;
+    grid-template-columns: 1fr 3fr 3fr 250px .5fr;
     text-align: left;
 }
 
@@ -38,6 +39,11 @@ a:link {
 
     display: inline;
 }
+
+.avatar-pic {
+    align-self: center;
+}
+
 .avatar-pic img{
     width: 50px;
     border-radius: 50px;
