@@ -1,6 +1,6 @@
 get '/create' do
 
-    erb :create
+    erb :'/artwork/create'
 end
 
 
