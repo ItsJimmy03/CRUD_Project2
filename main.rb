@@ -14,5 +14,5 @@ require_relative 'controllers/sessions_controller'
 
 get '/' do
     allPosts = all_posts();
-    erb :index
+    erb :index, locals: {allPosts: allPosts}
 end
