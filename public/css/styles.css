@@ -34,6 +34,10 @@ a:link {
     
 }
 
+.login ul{
+
+    display: inline-block;
+}
 .avatar-pic img{
     width: 50px;
     border-radius: 50px;
