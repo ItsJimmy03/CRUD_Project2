@@ -6,7 +6,7 @@ get '/sign_up' do
 
 end
 
-post '/posts' do
+post '/users' do
 
     username = params[:username]
     email = params[:email]
