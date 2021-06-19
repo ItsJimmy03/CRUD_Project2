@@ -7,6 +7,7 @@
 
 <form class='sign-up-forms' action="/sessions" method="POST">
   <input type="text" placeholder="Enter Email" name="email">
+    <%= error_message %>
   <input type="password" placeholder="Password" name="password">
   <button class="sign-up-button">LOG IN</button>
 </form>
