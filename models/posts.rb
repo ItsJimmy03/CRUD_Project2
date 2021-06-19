@@ -1,5 +1,5 @@
 def all_posts()
-    sql_query= "SELECT * FROM project;"
+    sql_query = "SELECT * FROM project;"
     run_sql(sql_query)
 end
 
