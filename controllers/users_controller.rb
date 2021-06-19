@@ -13,5 +13,5 @@ post '/users' do
     password = params[:password_digest]
 
     create_user(username, email, password)
-    erb :'/'
+    redirect '/'
 end
