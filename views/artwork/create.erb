@@ -1,14 +1,16 @@
 <div class="sign-up-card">
 <div class="sign-up-info">
-<h1>Login in</h1>
-<p>Enter your detials below to log in</p>
+<h1>Project Details</h1>
+<p>Add your project details below</p>
 </div>
 
 <form class='sign-up-forms' action="/create" method="POST">
-  <input type="text" placeholder="Enter Email" name="email">
-    <%= error_message %>
-  <input type="password" placeholder="Password" name="password">
-  <button class="sign-up-button">LOG IN</button>
+  <input type="text" placeholder="title" name="project_title">
+   <input type="text" placeholder="thumbnail_img" name="project_thumnail">
+    <input type="text" placeholder="author" name="project_author">
+     <input type="text" placeholder="about" name="project_about">
+      <input type="text" placeholder="image_url" name="project_main_img">
+  <button class="sign-up-button">Upload</button>
 </form>
 
 </div>
