@@ -11,7 +11,7 @@ end
 
 def delete_post(id)
 
-    sql_query = "DELETE FROM project WHERE id = #{id}"
+    sql_query = "DELETE FROM project WHERE id = #{id}";
     run_sql(sql_query)
     
 end 
