@@ -42,7 +42,7 @@
 
         <% if is_logged_in? %>
 
-            <p> Welcome, <%= session['user_name'] %>!</p>
+            <p> Welcome, <%= session[:user_name] %>!</p>
             <form action="/sessions" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <input type="submit" value="Logout"/>
