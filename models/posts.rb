@@ -1,6 +1,5 @@
 def all_posts()
-    sql_query = "SELECT * FROM project;"
-    run_sql(sql_query)
+    run_sql("SELECT * FROM project;")
 end
 
 def create_post(title, thumbnail, author, about, main_img)
