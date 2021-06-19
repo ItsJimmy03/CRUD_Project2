@@ -20,3 +20,14 @@ def find_user_by_email(email)
         return nil
     end
 end
+
+def find_user_by_id (id)
+    sql_query = "SELECT * FROM users WHERE id = '#{id}'"
+    results = run_sql(sql_query)
+
+    if results.to_a.length > 0
+        return results[0]
+    else
+        return nil
+    end
+end
