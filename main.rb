@@ -12,6 +12,6 @@ require_relative 'controllers/users_controller'
 require_relative 'controllers/sessions_controller'
 
 get '/' do
-
+    allPosts = all_posts()
     erb :index
 end

@@ -1,0 +1,14 @@
+<div class="sign-up-card">
+<div class="sign-up-info">
+<h1>Login in</h1>
+<p>Enter your detials below to log in</p>
+</div>
+
+<form class='sign-up-forms' action="/create" method="POST">
+  <input type="text" placeholder="Enter Email" name="email">
+    <%= error_message %>
+  <input type="password" placeholder="Password" name="password">
+  <button class="sign-up-button">LOG IN</button>
+</form>
+
+</div>

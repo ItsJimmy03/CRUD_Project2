@@ -3,19 +3,19 @@
 </div>
 
 <section class="main-grid">
-    <% 5.times do %>
+    <% allPost.each do |post|%>
         <div class="content-block">
             <div class="image-block"><img
-                    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/62fdd576887485.5c9beb75b0b96.jpg">
+                    src=<%= post[:thumbnail_img]%>>
             </div>
             <div class="info-block">
                 <div class="user-info">
-                <img src="https://www.pasrc.org/sites/g/files/toruqf431/files/styles/freeform_750w/public/2021-03/blank-profile-picture-973460_1280.jpg?itok=QzRqRVu8">
-                <h2>James Olsen</h2>
+                <h2> <%= post[:author] %>
+                </h2>
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <div class="reactions">
-                    <p>Likes: 2</p>
+                    <p>Likes: </p>
                 </div>
             </div>
         </div>

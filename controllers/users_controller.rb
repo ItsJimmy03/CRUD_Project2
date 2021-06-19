@@ -15,3 +15,9 @@ post '/users' do
     create_user(username, email, password)
     redirect '/'
 end
+
+get '/profile' do
+
+    erb :show
+
+end 
