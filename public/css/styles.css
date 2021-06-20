@@ -35,6 +35,10 @@ a:link {
     
 }
 
+.login p{
+    width: 40px;
+    
+}
 .login ul{
 
     display: inline;
