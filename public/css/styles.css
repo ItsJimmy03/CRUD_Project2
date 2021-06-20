@@ -40,6 +40,10 @@ a:link {
     display: inline;
 }
 
+.login form{
+    display: inline;
+}
+
 .avatar-pic {
     align-self: center;
 }
