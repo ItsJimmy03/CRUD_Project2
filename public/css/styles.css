@@ -44,11 +44,11 @@ a:link {
     display: inline;
 }
 
-.dropdown {
+.drop-down {
     display: inline-block;
 }
 
-.dropdown-content {
+.drop-down-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -58,7 +58,7 @@ a:link {
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.drop-down:hover .drop-down-content {
     display: block;
   }
 
