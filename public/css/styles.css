@@ -169,7 +169,7 @@ input {
 }
 
 .search-bar input {
-    width: 500px;
+    width: 400px;
     border-radius: 25px;
     background-color: lightgray;
 }
