@@ -40,14 +40,18 @@
             <section class="login">
 
 
-        <% if is_logged_in? %>
-
+         <% if is_logged_in? %>
+        
             <p> Welcome, <%= current_user()['user_id'] %>!</p>
             <a href="/create">Upload</a>
+           
+
             <div class="drop-down">
+
             <section class="avatar-pic">
              <img src="https://www.pasrc.org/sites/g/files/toruqf431/files/styles/freeform_750w/public/2021-03/blank-profile-picture-973460_1280.jpg?itok=QzRqRVu8">
-            </section>
+
+
                 <div class="drop-down-content">
                     <a href="/login"><li>Your Dashboard</li></a>
                     <a href="/sign_up"><li>Your Profile</li></a>
@@ -56,9 +60,13 @@
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="submit" value="Logout"/>
                     </form>
-                </div>
+               
+
+             </section>
             </div>
             <% else %>
+
+            <section class="login">
                 <ul>
                     <a href="/login"><li>Log in</li></a>
                     <a href="/sign_up"><li>Sign Up</li></a>
