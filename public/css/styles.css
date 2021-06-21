@@ -24,6 +24,9 @@ a:link {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.login {
+    display: inline-block;
+}
 .nav ul, .login ul{
     padding-left: 0px;
     
