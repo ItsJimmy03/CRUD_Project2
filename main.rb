@@ -13,6 +13,7 @@ require_relative 'controllers/users_controller'
 require_relative 'controllers/sessions_controller'
 
 get '/' do
+    session[:user_id]
     projects = all_posts();
     erb :index, locals: {projects: projects}
 end
