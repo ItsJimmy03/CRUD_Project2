@@ -19,7 +19,7 @@ post '/create' do
 end
 
 
-delete '/create' do
+delete '/create/:id' do
 
     id = params['id']
     delete_post(id)
