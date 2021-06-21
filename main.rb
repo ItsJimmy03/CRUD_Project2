@@ -15,6 +15,6 @@ require_relative 'controllers/sessions_controller'
 get '/' do
     projects = all_posts();
     session[:user_id]
-
+    session[:user_name]
     erb :index, locals: {projects: projects}
 end
