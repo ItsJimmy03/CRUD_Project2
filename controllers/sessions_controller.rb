@@ -11,6 +11,7 @@ post '/sessions' do
 
     if BCrypt::Password.new(user['password_digest']) == password
         session[:user_id] = user['id']
+        session[:user_name] = user['user_name']
         redirect '/'
     else 
         erb :'/sessions/login', locals: { error_message: 'Incorrect password' }
