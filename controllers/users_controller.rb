@@ -10,7 +10,7 @@ post '/users' do
 
     username = params[:user_name]
     email = params[:email]
-    password = params[:password_digest]
+    password = params[:password]
 
     create_user(username, email, password)
     redirect '/'
