@@ -10,9 +10,7 @@ def create_post(title, thumbnail, author, about, main_img)
 end 
 
 def delete_post(id)
-
-    sql_query = "DELETE FROM project WHERE id = #{id}";
-    run_sql(sql_query)
+    run_sql("DELETE FROM project WHERE id = #{id}";)
     
 end 
 
