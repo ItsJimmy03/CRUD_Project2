@@ -24,9 +24,7 @@ a:link {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.login {
-    display: inline-block;
-}
+
 .nav ul, .login ul{
     padding-left: 0px;
     
@@ -40,7 +38,7 @@ a:link {
 
 .login p{
     width: 40px;
-    
+    display: inline;
 }
 .login ul{
 
@@ -48,6 +46,10 @@ a:link {
 }
 
 .login form{
+    display: inline;
+}
+
+.login a{
     display: inline;
 }
 
