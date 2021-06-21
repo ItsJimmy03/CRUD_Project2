@@ -17,7 +17,7 @@
                 <div class="reactions">
                     <p>Likes: </p>
                 </div>
-                <form action="/create/<%= post[id] %>" method="POST">
+                <form action="/create/<%= post["id"] %>" method="POST">
                     <input type="hidden" name="_method" value="DELETE"/>
                     <input type="submit" value="Delete">
                 </form>
