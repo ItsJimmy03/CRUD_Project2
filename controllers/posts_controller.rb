@@ -20,7 +20,7 @@ end
 
 delete '/create' do
 
-    id = params[:id]
+    id = params['id']
     delete_post(id)
 
     redirect '/'
