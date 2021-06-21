@@ -5,6 +5,7 @@ end
 
 
 post '/create' do
+    id = params[:id]
     title = params[:project_title]
     thumbnail = params[:project_thumbmail]
     author = params[:project_author]
