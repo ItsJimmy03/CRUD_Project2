@@ -134,9 +134,20 @@ a:link {
 
 .user-info{
 
-    display: grid;
-    grid-template-columns: 1fr 8fr;
+    display: inline-block;
 }
+
+.user-info h3 {
+
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.user-info p {
+
+    margin-top: 4px;
+}
+
+
 .user-info img{
     width: 50px;
     padding-left: 10px;
