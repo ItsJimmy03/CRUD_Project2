@@ -5,7 +5,7 @@ end
 
 post '/sessions' do
     email = params[:email]
-    password = params[:password]
+    password = params[:password_digest]
 
     user = find_user_by_email(email)
 
