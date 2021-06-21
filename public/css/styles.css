@@ -102,7 +102,7 @@ a:link {
 .main-grid {
     max-width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
     text-align: center;
     gap: 20px;
