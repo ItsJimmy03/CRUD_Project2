@@ -36,7 +36,7 @@ get '/create/:id/edit' do
     erb :'/artwork/edit', locals: {post: results[0]}
 end
 
-put '/create/:id' do
+post '/create/:id' do
 
     id = params[:id]
     project_title = params[:project_title]
