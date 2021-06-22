@@ -8,7 +8,7 @@ For my project I wanted to create a web app similar to Behance or Dribble. I wan
 ## Wireframes 
 This was the very first wireframe I did created using Adobe XD. It was a simple grid layout of users projects and a global nav at the top. 
 
-[![Wireframe of Website](https://imgur.com/YN9bU22)]
+[![Wireframe of Website](https://i.imgur.com/YN9bU22.png)]
 
 My actual design is slightly different to how I wanted it and when I have time I would like to change the design to how I invisioned it.
 
