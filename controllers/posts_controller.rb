@@ -5,7 +5,7 @@ end
 
 get '/dashboard' do 
 
-    id = session[:id]
+    id = session[:user_id]
     projects = all_posts_by_user(id)
 
     erb :'/users/dashboard', locals: {projects: projects}
