@@ -8,10 +8,10 @@
 
 <form class='sign-up-forms' action="/create <%= post[:id] %>/edit" method="POST">
 <input type="hidden" name="_method" value="PUT"/>
-  <input type="text" placeholder="title" name="project_title" value="<%= post[':project_title'] %>">
-   <input type="text" placeholder="thumbnail_img" name="project_thumnail" value="<%= post[':project_thumnail'] %>">
-    <input type="text" placeholder="author" name="project_author" value="<%= post[':project_author'] %>" >
-     <input type="text" placeholder="about" name="project_about" value="<%= post[':project_about'] %>">
+  <input type="text" placeholder="title" name="project_title" value="<%= post['project_title'] %>">
+   <input type="text" placeholder="thumbnail_img" name="project_thumnail" value="<%= post['project_thumnail'] %>">
+    <input type="text" placeholder="author" name="project_author" value="<%= post['project_author'] %>" >
+     <input type="text" placeholder="about" name="project_about" value="<%= post['project_about'] %>">
       <input type="text" placeholder="image_url" name="project_main_img" value="<%= post['project_main_img'] %>">
   <button class="sign-up-button">Update Project</button>
 </form>
