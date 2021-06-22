@@ -17,6 +17,13 @@ def create_post(project_title, project_thumbnail, project_author, project_about,
  # SQL bolt
 end 
 
+
+def individual_post (id)
+    sql_query = "SELECT * FROM food WHERE id = $1;"
+    params = [ id ]
+    results = run_sql(sql_query, params)
+end
+
 def edit_post(title, thumbnail, author, about, main_img, id)
 
     sql_query = "UPDATE project SET project_title = $1, project_thumbmail  = $2, project_author  = $3, project_about  = $4, project_main_img  = $5 WHERE id = $6)"
