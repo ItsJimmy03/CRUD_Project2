@@ -28,7 +28,8 @@ end
 
 
 def delete_post(id)
-    run_sql("DELETE FROM project WHERE id = #{id};")
-    
+    sql_query = "DELETE FROM project WHERE id =$1"
+    params = [id]
+    run_sql(sql_query, params)
 end 
 
