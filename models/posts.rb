@@ -19,7 +19,7 @@ end
 
 
 def individual_post (id)
-    sql_query = "SELECT * FROM food WHERE id = $1;"
+    sql_query = "SELECT * FROM project WHERE id = $1;"
     params = [ id ]
     results = run_sql(sql_query, params)
 end
