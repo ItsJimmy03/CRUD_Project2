@@ -11,6 +11,7 @@ footer {
     background-color: #f5f9f9;
 }
 .footer-grid {
+    align-items: baseline;
     position: relative;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
