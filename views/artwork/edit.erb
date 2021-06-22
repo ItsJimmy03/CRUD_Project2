@@ -6,7 +6,7 @@
 
 
 
-<form class='sign-up-forms' action="/create <%= post[:id] %>" method="POST">
+<form class='sign-up-forms' action="/create <%= post['id'] %>" method="POST">
 <input type="hidden" name="_method" value="PUT"/>
   <input type="text" placeholder="title" name="project_title" value="<%= post['project_title'] %>">
    <input type="text" placeholder="thumbnail_img" name="project_thumnail" value="<%= post['project_thumnail'] %>">
