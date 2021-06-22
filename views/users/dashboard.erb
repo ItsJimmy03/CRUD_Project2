@@ -1,7 +1,8 @@
 <h1>Your Posts </H1>
 
-<div class="content-block">
 
+<section class="main-grid">
+<div class="content-block">
 <% projects.each do |post| %>
             <div class="image-block"><img
                     src="<%= post["project_main_img"]%>">
@@ -23,3 +24,5 @@
 <% end %>
 
 </div>
+
+</section>
