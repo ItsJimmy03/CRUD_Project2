@@ -5,7 +5,7 @@ end
 def create_post(project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
 
     sql_query = "INSERT INTO project(project_title, project_thumbmail, project_author, project_about, project_main_img, user_id) VALUES ($1, $2, $3, $4, $5, $6)"
-    params = (project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
+    params = [project_title, project_thumbnail, project_author, project_about, project_main_img, user_id]
     run_sql(sql_query, params)
 
  # SQL bolt
