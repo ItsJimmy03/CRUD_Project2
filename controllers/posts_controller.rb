@@ -36,6 +36,20 @@ get '/create/:id/edit' do
     erb :'/artwork/edit', locals: {post: results}
 end
 
+put '/create/:id/edit' do
+
+    id = params[:id]
+    project_title = params[:project_title]
+    project_thumbnail = params[:project_thumbmail]
+    project_author = params[:project_author]
+    project_about = params[:project_about]
+    project_main_img = params[:project_main_img]
+    user_id = session[:user_id]
+
+    edit_post(project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
+
+    redirect '/'
+end
 
 delete '/create/:id' do
 
