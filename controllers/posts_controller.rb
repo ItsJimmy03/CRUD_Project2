@@ -33,7 +33,7 @@ get '/create/:id/edit' do
     id = params[:id]
     results = individual_post(id)
 
-    erb :edit, locals: {post: results}
+    erb :'/artwork/edit', locals: {post: results}
 end
 
 
