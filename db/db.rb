@@ -1,6 +1,9 @@
-def run_sql(sql_query)
+def run_sql(sql_query, params = [])
+
     connection = PG.connect(ENV['DATABASE_URL'] || {dbname: 'portfolio'})
-    results = connection.exec(sql_query)
+
+    connection.prepare("statement_name", sql_query)
+    results = connection.exec_prepared("statement_name", params)
     connection.close
   
     return results
