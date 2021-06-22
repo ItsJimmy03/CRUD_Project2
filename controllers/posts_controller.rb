@@ -3,6 +3,16 @@ get '/create' do
     erb :'/artwork/create'
 end
 
+get '/dashbaord' do 
+
+    id = session[:id]
+    results = all_posts_by_user(id)
+
+    erb :dashboard, locals {projects: results}
+end
+
+
+
 
 post '/create' do
     id = params[:id]
