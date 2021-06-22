@@ -13,7 +13,7 @@ post '/create' do
     main_img = params[:project_main_img]
     user_id = session[:user_id]
 
-    create_post(title, thumbnail, author, about, main_img, users_id)
+    create_post(title, thumbnail, author, about, main_img, user_id)
 
     redirect '/'
 
