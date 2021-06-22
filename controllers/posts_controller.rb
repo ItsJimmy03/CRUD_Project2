@@ -8,7 +8,7 @@ get '/dashbaord' do
     id = session[:id]
     projects = all_posts_by_user(id)
 
-    erb :dashboard, locals: {projects: projects}
+    erb :'/users/dashboard', locals: {projects: projects}
 end
 
 
