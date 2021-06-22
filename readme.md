@@ -27,4 +27,5 @@ You can view your dashboard if you hover over the avatar. From there you can edi
 - [ ] Better Footer (High)
 - [ ] Other Pages (High)
 - [ ] Allow users to click on creators name to view their profiles (Medium)
-- [ ] Responsiveness/Media Queries
+- [ ] Responsiveness/Media Queries (Low)
+- [ ] CSS Updates (High)
