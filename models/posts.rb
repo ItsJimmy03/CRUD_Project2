@@ -27,7 +27,7 @@ end
 def edit_post(title, thumbnail, author, about, main_img, id)
 
     sql_query = "UPDATE project SET project_title = $1, project_thumbmail  = $2, project_author  = $3, project_about  = $4, project_main_img  = $5 WHERE id = $6)"
-    params = [project_title, project_thumbnail, project_author, project_about, project_main_img, user_id]
+    params = [project_title, project_thumbnail, project_author, project_about, project_main_img, id]
     run_sql(sql_query, params)
  # SQL bolt
 end 
