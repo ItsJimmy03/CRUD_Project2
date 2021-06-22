@@ -3,7 +3,7 @@ get '/create' do
     erb :'/artwork/create'
 end
 
-get '/dashbaord' do 
+get '/dashboard' do 
 
     id = session[:id]
     projects = all_posts_by_user(id)
