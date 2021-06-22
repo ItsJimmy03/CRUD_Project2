@@ -33,7 +33,7 @@ get '/create/:id/edit' do
     id = params[:id]
     results = individual_post(id)
 
-    erb :'/artwork/edit', locals: {post: results}
+    erb :'/artwork/edit', locals: {post: results[0]}
 end
 
 put '/create/:id/edit' do
@@ -44,9 +44,8 @@ put '/create/:id/edit' do
     project_author = params[:project_author]
     project_about = params[:project_about]
     project_main_img = params[:project_main_img]
-    user_id = session[:user_id]
 
-    edit_post(project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
+    edit_post(project_title, project_thumbnail, project_author, project_about, project_main_img, id)
 
     redirect '/'
 end
