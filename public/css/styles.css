@@ -6,9 +6,18 @@ body {
     background-color: white;
 }
 
+footer {
+
+    height: 300px;
+}
 .footer-grid {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-grid li{
+    list-style: none;
 }
 
 a:link {
