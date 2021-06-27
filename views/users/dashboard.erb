@@ -3,24 +3,24 @@
 
 <section class="main-grid">
 <div class="content-block">
-<% projects.each do |post| %>
+<% projects.each do |project| %>
             <div class="image-block"><img
-                    src="<%= post["project_main_img"]%>">
+                    src="<%= project["project_main_img"]%>">
             </div>
             <div class="info-block">
                 <div class="user-info">
-                <h3> <%= post["project_title"] %></h3>
-                <p> <%= post["project_author"]%> </p>
+                <h3> <%= project["project_title"] %></h3>
+                <p> <%= project["project_author"]%> </p>
                 </div>
                 <div class="reactions">
                     <p>Likes: </p>
                 </div>
-                <form action="/create/<%= post["id"] %>" method="POST">
+                <form action="/create/<%= project["id"] %>" method="POST">
                     <input type="hidden" name="_method" value="DELETE"/>
                     <input type="submit" value="Delete">
                 </form>
 
-                <form action="/create/<%= post["id"] %>/edit">
+                <form action="/create/<%= project["id"] %>/edit">
                     <input type="submit" value="Edit">
                 </form>
             </div>

@@ -6,7 +6,7 @@ end
 get '/dashboard' do 
 
     id = session[:user_id]
-    projects = all_posts_by_user(id)
+    projects = all_projects_by_user(id)
 
     erb :'/users/dashboard', locals: {projects: projects}
 end
@@ -23,7 +23,7 @@ post '/create' do
     project_main_img = params[:project_main_img]
     user_id = session[:user_id]
 
-    create_post(project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
+    create_project(project_title, project_thumbnail, project_author, project_about, project_main_img, user_id)
 
     redirect '/'
 
@@ -31,9 +31,9 @@ end
 
 get '/create/:id/edit' do
     id = params[:id]
-    results = individual_post(id)
+    results = individual_project(id)
 
-    erb :'/artwork/edit', locals: {post: results[0]}
+    erb :'/artwork/edit', locals: {project: results[0]}
 end
 
 put '/create/:id' do
@@ -45,7 +45,7 @@ put '/create/:id' do
     project_about = params[:project_about]
     project_main_img = params[:project_main_img]
 
-    edit_post(project_title, project_thumbnail, project_author, project_about, project_main_img, id)
+    edit_project(project_title, project_thumbnail, project_author, project_about, project_main_img, id)
 
     redirect '/'
 end
@@ -53,7 +53,7 @@ end
 delete '/create/:id' do
 
     id = params['id']
-    delete_post(id)
+    delete_project(id)
 
     redirect '/'
 

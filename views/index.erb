@@ -3,15 +3,15 @@
 </div>
 
 <section class="main-grid">
-    <% projects.each do |post| %>
+    <% projects.each do |project| %>
         <div class="content-block">
             <div class="image-block"><img
-                    src="<%= post["project_main_img"]%>">
+                    src="<%= project["project_main_img"]%>">
             </div>
             <div class="info-block">
                 <div class="user-info">
-                <h3> <%= post["project_title"] %></h3>
-                <p> <%= post["project_author"]%> </p>
+                <h3> <%= project["project_title"] %></h3>
+                <p> <%= project["project_author"]%> </p>
                 </div>
                 <div class="reactions">
                     <p>Likes: </p>
